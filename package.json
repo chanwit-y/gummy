@@ -1,0 +1,16 @@
+{
+  "name": "gummy",
+  "version": "1.0.0",
+  "scripts": {
+    "dev:client": "cd packages/client && bun run dev",
+    "dev:server": "cd packages/server && bun run dev"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+     "api": "workspace:packages/core/api"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "workspaces": ["packages/*"]
+}

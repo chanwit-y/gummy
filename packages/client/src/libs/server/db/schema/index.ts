@@ -23,6 +23,7 @@ export const refreshTokensTable = sqliteTable("refresh_tokens", {
 export const postsTable = sqliteTable("posts", {
   id: integer("id").primaryKey(),
   title: text("title").notNull(),
+  test: text("test").notNull(),
   content: text("content").notNull(),
   userId: integer("user_id")
     .notNull()

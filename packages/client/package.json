@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "gen:sql": "bunx drizzle-kit generate",
     "migrate": "bun run src/libs/server/db/migrate.ts",
+    "db:push": "bunx drizzle-kit push",
     "lint": "eslint .",
     "preview": "vite preview"
   },
